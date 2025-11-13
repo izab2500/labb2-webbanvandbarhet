@@ -34,4 +34,4 @@ Skapa en webbplats med HTML och CSS där du lägger till den givna texten och bi
 
 ## Publicering
 
-När uppgiften är klar, publicera webbplatsen på en publikt tillgänglig webbhost. Lägg HTML-dokument, CSS och bilder i en egen katalog på servern, t.ex.:
+När uppgiften är klar, publicera webbplatsen på en publikt tillgänglig webbhost.
