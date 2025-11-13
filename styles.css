@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    min-height: 100%;
+    background-color: whitesmoke;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    height: 100%;
+    width: 95%;
+    margin-inline: auto;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: "Montserrat", 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+}
+
+.p-text {
+    max-width: 80ch;
+    width: 100%;
+    line-height: 30px;
+    font-size: 1.3rem;
+    margin-inline: auto;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.education {
+    font-size: 1.2rem;
+    max-width: 500px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+}
+
+.education>li {
+    margin-bottom: 15px;
+}
+
+.education>li:first-child {
+    list-style-type: none;
+}
+
+.no-disc-style {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 8px 0;
+}
+
+.ingress{
+    font-style: oblique;
+    letter-spacing: 2px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkgrey;
+    height: 120px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+header>div {
+    position: relative;
+    display: none;
+}
+
+header button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+header figcaption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    padding: 6px;
+    transition: all 0.4s ease;
+}
+
+
+/**Active link, hover**/
+.active,
+header a:hover {
+    color: whitesmoke;
+    background-color: black;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+
+/**Main**/
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.p-margin-b {
+    margin-bottom: 25px;
+}
+
+.text-left {
+    margin-right: auto;
+}
+
+main>section:first-child {
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+main>section:first-child>img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 100/75;
+    margin-bottom: 25px;
+}
+
+.quote {
+    margin-inline: auto;
+    background-color: rgb(250, 175, 84);
+    color: black;
+    font-size: 1.8rem;
+    padding: 20px;
+    border-radius: 4px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.img-container {
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.img-container>img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    aspect-ratio: 100/75;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.marie-section {
+    display: flex;
+    gap: 25px;
+}
+
+
+.marie-container {
+    max-width: 600px;
+}
+
+.marie-container>img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1000/562;
+}
+
+/**Footer**/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid darkgrey;
+    padding-top: 12px;
+    font-size: 1.2rem;
+    height: 80px;
+    width: 100%;
+}
+
+/**Media queries**/
+
+@media (max-width:550px) {
+    header figcaption {
+        display: none;
+    }
+
+}
+
+@media (max-width:1159px) {
+    header>div {
+        display: inline-block;
+    }
+
+    header div>button:last-child {
+        display: none;
+    }
+
+    header>figure {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    .quote {
+        width: 100%;
+    }
+
+    .education {
+        margin-left: 25px;
+
+    }
+
+    .marie-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
